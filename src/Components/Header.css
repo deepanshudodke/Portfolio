@@ -1,0 +1,127 @@
+header {
+    height: 10vh;
+    line-height: 10vh;
+}
+
+header .container {
+    padding-top: 1px;
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+header ul li a {
+    transition: all 0.51s ease;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+header ul li a:hover {
+    color: #ff014f;
+}
+
+.home-btn {
+    padding: 14px 25px;
+    border-radius: 6px;
+
+    cursor: pointer;
+    height: fit-content;
+    color: white;
+}
+
+.home-btn {
+    transition: all 0.51s ease;
+    background: linear-gradient(145deg, #272731, #484851);
+}
+
+.home-btn:hover {
+    background: linear-gradient(145deg, #c5c5d1, #636371);
+}
+
+.logo {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.ghost i {
+    padding-bottom: 4px;
+    font-size: 26px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.ghum {
+    text-align: center;
+    background: transparent;
+}
+
+.ghum i {
+    display: none;
+    font-size: 30px;
+}
+.header.active {
+    background-color: rgb(20, 18, 18);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.9);
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: all 0.56s ease;
+}
+
+.open,
+.close {
+    display: none;
+}
+
+@media (max-width: 1087px) {
+    header ul {
+        padding: 30px;
+    }
+
+    .ghum i {
+        display: block;
+        font-size: 25px;
+    }
+    .nav-link-mobile {
+        position: absolute;
+        display: block;
+        list-style-type: none;
+        box-shadow: rgba(50, 50, 93, 0.23) 0 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
+
+        left: 0;
+        top: 0;
+        transition: all 0.5s ease;
+        width: 60%;
+        height: 100vh;
+        background-color: #131415;
+        z-index: 888;
+    }
+
+    header ul li {
+        width: 100%;
+        transition: 0.5s;
+        text-transform: uppercase;
+        line-height: 60px;
+    }
+
+    header .link {
+        display: none;
+    }
+    .ghost i {
+        display: none;
+    }
+    .open,
+    .close {
+        position: absolute;
+
+        top: 26px;
+        right: 20px;
+
+        display: block;
+    }
+}

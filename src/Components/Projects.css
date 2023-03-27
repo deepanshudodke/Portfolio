@@ -1,0 +1,159 @@
+.projects {
+    color: white;
+    height: 560px;
+    width: 94%;
+    margin-inline: auto;
+}
+.all-projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.single-project {
+    width: 300px;
+    height: 200px;
+}
+
+.single-project .icon img {
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.single-project .slide {
+    width: 300px;
+    height: 200px;
+
+    transition: 0.5s;
+}
+
+.single-project .slide2 {
+    background-color: rgba(148, 136, 136, 0.082);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+.single-project .slide.slide1 {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1;
+
+    transition: 0.7s;
+
+    transform: translateY(100px);
+}
+
+.single-project:hover .slide.slide1 {
+    transform: translateY(20px);
+}
+
+.single-project .slide.slide2 {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    transition: 0.8s;
+    border-radius: 10px;
+    transform: translateY(-105px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.249);
+}
+
+.single-project:hover .slide.slide2 {
+    transform: translateY(0);
+}
+
+.single-project .slide.slide2::after {
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+
+    height: 4px;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #a4a6a8;
+}
+
+.single-project .slide.slide2 .content p {
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: #f1e9e9;
+}
+
+.single-project .slide.slide2 .content h3 {
+    margin: 0 0 10px 0;
+
+    padding: 0;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #414141;
+}
+
+.live-link {
+    padding-top: 10px;
+    padding-inline: 30px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.live-link a {
+    border-radius: 5px;
+    background-color: rgba(252, 252, 252, 0.4);
+    padding-inline: 20px;
+}
+
+@media (max-width: 1404px) {
+    .single-project {
+        margin-top: 50px;
+    }
+    .all-projects {
+        width: 80%;
+        margin-inline: auto;
+        column-gap: 40px;
+    }
+    .projects {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 883px) {
+    .all-projects {
+        justify-content: center;
+        margin-inline: auto;
+    }
+    .projects {
+        height: 1590px;
+    }
+}

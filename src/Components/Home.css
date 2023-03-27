@@ -1,0 +1,134 @@
+.hero {
+    color: white;
+    width: 94%;
+    margin: auto;
+}
+.hero .container {
+    justify-content: space-between;
+    gap: 100px;
+}
+.left {
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.left h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(132, 20, 237, 0.929);
+}
+
+.left h1 {
+    font-size: 50px;
+}
+
+.left h2 {
+    font-size: 40px;
+}
+
+.left h1 span {
+    color: yellow;
+    text-transform: capitalize;
+}
+
+.left h2 span {
+    color: rgb(156, 17, 17);
+}
+
+.left p {
+    margin-top: 15px;
+    word-spacing: 1px;
+    color: rgb(154, 147, 137);
+}
+
+.right {
+    width: 100%;
+}
+
+.right_image img {
+    margin-top: 80px;
+    border-radius: 15px;
+    box-shadow: rgba(255, 239, 18, 0.916) 0px 5px 15px;
+    width: 100%;
+    height: auto;
+}
+
+.social {
+    margin-top: 50px;
+
+    display: inline-block;
+}
+
+.icons {
+    gap: 10px;
+    margin-top: 2px;
+}
+.social h4 {
+    color: rgba(18, 174, 198, 0.858);
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.social a i {
+    color: rgba(243, 243, 243, 0.621);
+    opacity: 0.5;
+    font-size: 25px;
+    transition: all 0.36s ease;
+}
+
+.social a i:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 883px) {
+    .hero .container {
+        gap: 10px;
+    }
+
+    .right_image img {
+        margin-top: 80px;
+        border-radius: 15px;
+        box-shadow: rgba(255, 239, 18, 0.916) 0px 5px 15px;
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .right {
+        width: 100%;
+    }
+
+    .right_image {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 10px;
+    }
+    .hero .container {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .left {
+        margin-top: 60px;
+    }
+
+    .left h3 {
+        font-size: 10px;
+        font-weight: bold;
+        color: rgba(132, 20, 237, 0.929);
+    }
+
+    .left h1 {
+        font-size: 25px;
+    }
+
+    .left h2 {
+        font-size: 20px;
+    }
+
+    .left p {
+        font-size: 70%;
+    }
+}
